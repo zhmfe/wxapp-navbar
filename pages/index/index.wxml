@@ -1,0 +1,9 @@
+<!-- 引入自定义组价。'navbar-data'中navbar是自定义名字，决定了组件中'navbarData'的名字 -->
+
+<view class="home">
+    <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+    <image src="/images/home-bg.png" class="home-bg"></image>
+</view>
+<!-- <view class='home-page' style='margin-top: {{height}}px'>
+  页面首页
+</view> -->

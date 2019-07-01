@@ -1,0 +1,17 @@
+<view class='nav-wrap' style='height: {{height*2 + 20}}px;'>
+    <!-- 导航栏 中间的标题 -->
+  <view class='nav-title' style='line-height: {{height*2 + 44}}px;'>{{navbarData.title}}</view>
+      <!-- 导航栏  左上角的返回按钮 和home按钮-->
+  <view class='nav-left'>
+        <!--  其中showCapsule控制左上角按钮的显示隐藏，首页不显示 showBack 是否显示返回按钮 showHome 是否显示首页按钮 -->
+    <view class='nav-capsule' style='height: {{height*2 + 44}}px;' wx:if='{{navbarData.showCapsule}}'>
+      <view bindtap='_navback' wx:if='{{navbarData.showBack}}'>
+        <image src='/images/back.png' mode='aspectFill' class='back-pre'></image>
+      </view>
+      <view class='navbar-v-line' wx:if='{{navbarData.showHome}}'></view>
+      <view bindtap='_backhome' wx:if='{{navbarData.showHome}}'>
+        <image src='/images/home.png' mode='aspectFill' class='back-home'></image>
+      </view>
+    </view>
+  </view>
+</view>
